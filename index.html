@@ -8,12 +8,149 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <style>
-      
+        .window-box {
+            border: 1px solid #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.01rem;
+        }
+
+        .window-title {
+            flex: 1;
+        }
+
+        .minimize-btn,
+        .maximize-btn,
+        .close-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .custom-height {
+            height: 1.5rem;
+        }
+
+        .last-divs {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 2.5rem;
+        }
+
+        .circle {
+            width: 1rem;
+            height: 1rem;
+            background-color: #000000;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            background-image: url('icon-lupa.png'); /* Calea către imaginea cu iconița de lupă */
+            background-position: 10px center; 
+            background-repeat: no-repeat; 
+            padding-left: 30px; 
+            height: 1.5rem;
+            width: 15rem;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        .search-icon {
+            margin-left: 10px; 
+            font-size: 20px;
+            color: #555; 
+        }
+
+        .image-holder {
+            width: 100%;
+            padding-top: 33.33%; 
+            background-color: #ddd; 
+        }
+
+        .grey{
+            background-color: #757171;
+        }
+
     </style>
 </head>
 
 <body>
-  
+
+    <div class="container mt-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="window-box  custom-height rounded">
+                    <div class="window-title ms-2">
+                        Window
+                    </div>
+                    <div>
+                        <button class="btn minimize-btn"><i class="fas fa-window-minimize"></i></button>
+                        <button class="btn maximize-btn"><i class="fas fa-window-maximize"></i></button>
+                        <button class="btn close-btn"><i class="fas fa-window-close"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="window-box rounded bg-secondary d-flex">
+
+
+                    <div class="window-title ms-4" style="font-size: 1.5rem;">
+                        <b>Facebook</b>
+                    </div>
+
+
+                    <div class="search-box">
+                        <span class="search-icon">&#128269;</span>
+                        <input type="text" class="rounded me-3" placeholder="Search" style="height: 1.5rem; width: 15rem;">
+
+                    </div>
+
+
+                    <div class="d-flex">
+                        <a href="https://www.yahoo.com" class="mx-1 mb-1">
+                            <img src="logo-yahoo.avif" alt="Yahoo Logo" class="logo">
+                        </a>
+                        <div class="mx-1">| Facebook Page |</div>
+                        <div class="mx-1">Home |</div>
+                        <span class="circle mx-1 mt-1"></span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-12 position-relative">
+                <div class="image-holder rounded"></div>
+                <div class="rounded position-absolute border border-secondary grey" style="width: 10rem; height: 10rem; left: 2rem; top: 9rem;"></div>
+                <div class="position-absolute" style="left: 13rem; top: 12rem;"> Timotei Daniel </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
 </body>
 
